@@ -1,5 +1,7 @@
 package br.ce.wcaquino.servicos;
 
+import org.junit.After;
+import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -10,9 +12,23 @@ public class CalculadoraTest {
 	
 	private Calculadora calc;
 	
+	public static StringBuffer ordem = new StringBuffer();
+	
 	@Before
 	public void setup() {
 		calc = new Calculadora();
+		System.out.println("Iniciando 2");
+		ordem.append("2");
+	}
+	
+	@After
+	public void tearDown() {
+		System.out.println("Finalizando 2");
+	}
+	
+	@AfterClass
+	public static void tearDownClass() {
+		System.out.println(ordem.toString());
 	}
 
 	@Test

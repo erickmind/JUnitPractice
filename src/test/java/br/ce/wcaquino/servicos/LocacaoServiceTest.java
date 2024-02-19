@@ -12,6 +12,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import org.junit.After;
+import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Ignore;
@@ -19,7 +21,9 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ErrorCollector;
 import org.junit.rules.ExpectedException;
-import org.mockito.Mockito;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 
 import br.ce.waquino.daos.LocacaoDao;
 import br.ce.waquino.exceptions.FilmeSemEstoqueException;
@@ -38,23 +42,34 @@ public class LocacaoServiceTest {
 	@Rule
 	public ExpectedException exception = ExpectedException.none();
 	
+	@InjectMocks
 	private LocacaoService service;
 	
+	@Mock
 	private LocacaoDao dao;
 	
+	@Mock
 	private SpcService spc;
 	
+	@Mock
 	private EmailService emailService;
 	
 	@Before
-	public void setup() {
-		service = new LocacaoService();	
-		dao = Mockito.mock(LocacaoDao.class);
-		service.setLocacaoDAO(dao);
-		spc = Mockito.mock(SpcService.class);
-		service.setSpc(spc);
-		emailService = Mockito.mock(EmailService.class);
-		service.setEmailService(emailService);
+	public void setUp() {
+		MockitoAnnotations.initMocks(this);
+		System.out.println("Iniciando 1");
+		CalculadoraTest.ordem.append("1");
+		
+	}
+	
+	@After
+	public void tearDown() {
+		System.out.println("Finalizando 1");
+	}
+	
+	@AfterClass
+	public static void tearDownClass() {
+		System.out.println(CalculadoraTest.ordem.toString());
 	}
 	
 	@Test

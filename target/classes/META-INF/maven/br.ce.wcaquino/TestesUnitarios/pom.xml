@@ -8,9 +8,16 @@
 	  <testSourceDirectory>src</testSourceDirectory>
 	  <plugins>
 		  <plugin>
-			  <groupId></groupId>
-			  <artifactId></artifactId>
-			  <version></version>
+			  <groupId>org.apache.maven.plugins</groupId>
+			  <artifactId>maven-surfire-plugin</artifactId>
+			  <version>2.18.1</version>
+			  <configuration>
+				  <includes>
+					  <include>br/ce/wcaquino/**/*.java</include>
+				  </includes>
+				  <useUnlimitedThreads>true</useUnlimitedThreads>
+				  <parallel>all</parallel>
+			  </configuration>
 		  </plugin>
 	  </plugins>
   </build>

@@ -3,6 +3,7 @@ package br.ce.wcaquino.servicos;
 import java.util.Arrays;
 import java.util.List;
 
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -10,7 +11,9 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameter;
 import org.junit.runners.Parameterized.Parameters;
-import org.mockito.Mockito;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 
 import br.ce.waquino.daos.LocacaoDao;
 import br.ce.wcaquino.entidades.Filme;
@@ -20,7 +23,14 @@ import br.ce.wcaquino.entidades.Usuario;
 @RunWith(Parameterized.class)
 public class CalculadoraDescontosTest {
 	
+	@InjectMocks
 	private LocacaoService service;
+	
+	@Mock
+	private LocacaoDao dao;
+	
+	@Mock
+	private SpcService spc;
 
 	@Parameter
 	public List<Filme> filmes;
@@ -28,13 +38,7 @@ public class CalculadoraDescontosTest {
 	public double valorLocacao;
 	@Parameter(value = 2)
 	public String nomeTeste;
-	
-	@Before
-	public void setup() {
-		service = new LocacaoService();
-		LocacaoDao dao = Mockito.mock(LocacaoDao.class);
-		service.setLocacaoDAO(dao);
-	}
+
 	
 	private static Filme filme1 = new Filme("Kill Bill", 5, 10.0);
 	private static Filme filme2 = new Filme("Django Livre", 2, 10.0);
@@ -43,6 +47,17 @@ public class CalculadoraDescontosTest {
 	private static Filme filme5 = new Filme("Chucky", 3, 10.0);
 	private static Filme filme6 = new Filme("Carga explosiva", 3, 10.0);
 	private static Filme filme7 = new Filme("Panico", 3, 10.0);
+	
+	@Before
+	public void setUp() {
+		MockitoAnnotations.initMocks(this);
+		System.out.println("Iniciando 4");
+	}
+	
+	@After
+	public void tearDown() {
+		System.out.println("Finalizando 4");
+	}
 	
 	@Parameters(name = "{2}")
 	public static List<Object[]> getParametros() {
@@ -62,6 +77,8 @@ public class CalculadoraDescontosTest {
 		Usuario usuario = new Usuario();
 		
 		Locacao retorno = service.alugarFilme(usuario, filmes);
+		
+		Thread.sleep(5000);
 		
 		Assert.assertEquals(valorLocacao, retorno.getValor(), 0.1);
 	}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="br.ce.wcaquino.servicos.CalculadoraMockTest" time="0.003" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\ekussumotodo\OneDrive - DXC Production\Documents\Courses\Testes + JUnit\TestesUnitarios\target\test-classes;C:\Users\ekussumotodo\OneDrive - DXC Production\Documents\Courses\Testes + JUnit\TestesUnitarios\target\classes;C:\Users\ekussumotodo\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\ekussumotodo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\ekussumotodo\.m2\repository\org\mockito\mockito-all\1.10.19\mockito-all-1.10.19.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\OpenJDK\jdk-8.0.362.09-hotspot\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\ekussumotodo\AppData\Local\Temp\surefire1873859847133587132\surefirebooter-20240219131058569_3.jar C:\Users\ekussumotodo\AppData\Local\Temp\surefire1873859847133587132 2024-02-19T13-10-57_295-jvmRun1 surefire-20240219131058569_1tmp surefire_0-20240219131058569_2tmp"/>
+    <property name="surefire.test.class.path" value="C:\Users\ekussumotodo\OneDrive - DXC Production\Documents\Courses\Testes + JUnit\TestesUnitarios\target\test-classes;C:\Users\ekussumotodo\OneDrive - DXC Production\Documents\Courses\Testes + JUnit\TestesUnitarios\target\classes;C:\Users\ekussumotodo\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\ekussumotodo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\ekussumotodo\.m2\repository\org\mockito\mockito-all\1.10.19\mockito-all-1.10.19.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\ekussumotodo"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\OpenJDK\jdk-8.0.362.09-hotspot\jre"/>
+    <property name="basedir" value="C:\Users\ekussumotodo\OneDrive - DXC Production\Documents\Courses\Testes + JUnit\TestesUnitarios"/>
+    <property name="style.color" value="always"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\ekussumotodo\AppData\Local\Temp\surefire1873859847133587132\surefirebooter-20240219131058569_3.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\OpenJDK\jdk-8.0.362.09-hotspot\jre\lib\resources.jar;C:\Program Files\OpenJDK\jdk-8.0.362.09-hotspot\jre\lib\rt.jar;C:\Program Files\OpenJDK\jdk-8.0.362.09-hotspot\jre\lib\sunrsasign.jar;C:\Program Files\OpenJDK\jdk-8.0.362.09-hotspot\jre\lib\jsse.jar;C:\Program Files\OpenJDK\jdk-8.0.362.09-hotspot\jre\lib\jce.jar;C:\Program Files\OpenJDK\jdk-8.0.362.09-hotspot\jre\lib\charsets.jar;C:\Program Files\OpenJDK\jdk-8.0.362.09-hotspot\jre\lib\jfr.jar;C:\Program Files\OpenJDK\jdk-8.0.362.09-hotspot\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_362-362-b09"/>
+    <property name="user.name" value="ekussumotodo"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\OpenJDK\jdk-8.0.362.09-hotspot\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\ekussumotodo\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\EKUSSU~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_362-362"/>
+    <property name="user.dir" value="C:\Users\ekussumotodo\OneDrive - DXC Production\Documents\Courses\Testes + JUnit\TestesUnitarios"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\OpenJDK\jdk-8.0.362.09-hotspot\jre\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Users/ekussumotodo/OneDrive - DXC Production/Documents/Java/sts-4.19.0.RELEASE//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502/jre/bin/server;C:/Users/ekussumotodo/OneDrive - DXC Production/Documents/Java/sts-4.19.0.RELEASE//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502/jre/bin;C:\Program Files\OpenJDK\jdk-8.0.362.09-hotspot\bin;C:\Python310\Scripts\;C:\Python310\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\Symantec\VIP Access Client\;C:\Program Files\dotnet\;C:\Program Files (x86)\Pulse Secure\VC142.CRT\X64\;C:\Program Files (x86)\Pulse Secure\VC142.CRT\X86\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Maven\apache-maven-3.9.3\bin;C:\Program Files\1E\Client\Extensibility\NomadBranch;C:\Users\ekussumotodo\AppData\Local\Microsoft\WindowsApps;C:\Users\ekussumotodo\.dotnet\tools;C:\Program Files\Azure Data Studio\bin;C:\Users\ekussumotodo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ekussumotodo\AppData\Roaming\npm;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2\bin;;C:\Users\ekussumotodo\OneDrive - DXC Production\Documents\Java\sts-4.19.0.RELEASE;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="OpenLogic-OpenJDK"/>
+    <property name="java.vm.version" value="25.362-b09"/>
+    <property name="java.specification.maintenance.version" value="4"/>
+    <property name="java.ext.dirs" value="C:\Program Files\OpenJDK\jdk-8.0.362.09-hotspot\jre\lib\ext;C:\windows\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="deveMostrarDiferencaEntreMockSpy" classname="br.ce.wcaquino.servicos.CalculadoraMockTest" time="0.002">
+    <system-out><![CDATA[Iniciando 3
+Estou executando o somar!
+Mock:3
+Spy:5
+Finalizando 3
+]]></system-out>
+  </testcase>
+</testsuite>
